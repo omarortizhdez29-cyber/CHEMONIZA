@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Autobiografía</title>
+    <link rel="stylesheet" type="text/css" href="hola.css"/>
+
+</head>
+<body>
+
+    <header>
+        <h1>Mi autobiografía</h1>
+        <p style="text-align: center;">Aquí mostraré un poco de mi propia persona y algunas de mis fotos y canciones</p>
+    </header>
+
+    <hr>
+    <section>
+        <h2 style="text-align: center;">Sobre Mí</h2>
+        <p class="cuadro">Hola, me llamo Jose Angel Trigueros Zalas, nací en Los Mochis, Sin. MX. Actualmente soy estudiante de preparatoria, buscando "descubrirme" y sin un propósito e identidad clara.</p>
+        <p class="cuadro">Sufrí bullying toda mi infancia por ser diferente y no haber desarrollado plenamente el español, por lo que mis padres decidieron darme clases particulares y no tuve clases en escuelas normales hasta la secundaria. </p>
+        <p class="cuadro">Viví un corto tiempo (unos 6-8 meses) en EEUU donde logré hacer varios amigos que extraño mucho y sentí que encajaba muy fácil, además que explotó mi obsesión por las culturas de otros países (en especial de RU, US, DE y UK).</p>
+        <p class="cuadro">Tras un exceso de malos hábitos decidí despertar y comenzar a valorar quien era, ser extrovertido y aceptar que mi forma de ser no encaja con la cultura en mi país sin adaptarme un poco, mas diverso con mis objetivos y dejar de tomar la escuela como mi único valor.</p>
+        <p class="cuadro">Me encuentro en una etapa de buscar mi mayor desarrollo personal y tratar de mostrar mi personalidad y gustos a los demás aquí. Busco estudiar mecátronica y física de particulas en Alemania .</p>
+        <!-- Imagen -->
+        <img src="vacaciones.jpeg" alt="Yo y mi mejor amigo (a la extrema izquierda) en estas vacaciones" width="360" height="570">
+    </section>
+
+    <!-- Sección de Listas -->
+    <br>
+    <section>
+        <h2>Mis Pasatiempos e Hitos Principales</h2>
+        
+        <!-- Lista No Ordenada -->
+        <h3>Pasatiempos e Intereses</h3>
+        <ul>
+            <li>Ciencias exactas y mecátronica</li>
+            <li>Idiomas y culturas extranjeras</li>
+            <li>Calistenia y Powerlifting</li>
+            <li>Literatura rusa</li>
+            <li>Economía</li>
+            <li>Escuchar música</li>
+        </ul> 
+
+        <!-- Lista Ordenada -->
+        <h3>Principales Logros</h3>
+        <ol>
+            <li>1er lugar en competencia de matemáticas (2022)</li>
+            <li>Graduarme de inglés con nivel C1 (06/2023)</li>
+            <li>Haber dejado vicios tóxicos y quitar mi obesidad (2024-2025)</li>
+            <li>Quedar 2do estatal en Cultura Digital (2026)</li>
+            <li>Terminar una carrera de 21Km en 2 horas (03/2026)</li>
+            <li>Graduarme con carrera técnica de mecátronico en TecMilenio (online) (06/2026)</li>
+            <li>Comenzar a aprender ruso (07/2026)</li>
+            <li>Pasar B1.2 en alemán(10/2026)</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 class="noma">Playlist censurada favorita</h2>
+        <p class="noma">La mayoría de mis artistas rusos favoritos estan prohibidos ya sea por la censura occidental, o por la burocracia y censura rusa</p>
+        <p class="noma">Chernikovskaya Hata  <a href="https://www.youtube.com/watch?v=sIFPftyqTWI&list=RDsIFPftyqTWI&start_radio=1" target="_blank">Youtube</a>.</p>
+    </section>
+
+    <!-- Sección de Elementos Multimedia -->
+    <section>
+        <h2>Multimedia</h2>
+        
+        <!-- Audio -->
+        <h3>Mi Canción Favorita: Roman Holiday -> Fontaines D.C</h3>
+        <audio controls >
+            <source src="canción.mp3" type="audio/mpeg" >
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <!-- Video -->
+        <h3>Meme</h3>
+        <video controls width="320" height="240" style="align-content: center;">
+            <source src="lobster.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </section>
+
+    <!-- Sección de Tabla -->
+    <section>
+        <h2>Idiomas</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Idioma</th>
+                    <th>Nivel</th>
+                    <th>Escuela</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Inglés</td>
+                    <td>C1</td>
+                    <td>CELE (UAdeO)</td>
+                </tr>
+                <tr>
+                    <td>Alemán</td>
+                    <td>B1.2</td>
+                    <td>Speakland</td>
+                </tr>
+                <tr>
+                    <td>Ruso</td>
+                    <td>A1.2</td>
+                    <td>Autodidacta</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sección de Formulario de Contacto -->
+    <section>
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="mas">
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+            </div>
+            
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+</body>
+</html>
